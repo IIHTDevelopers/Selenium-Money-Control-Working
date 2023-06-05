@@ -142,7 +142,7 @@ try {
 		System.out.print("\n" + BLUE_BOLD_BRIGHT + "=>");
 		
 
-		System.out.print(YELLOW_BOLD_BRIGHT + "UITest For : ");
+		System.out.print(YELLOW_BOLD_BRIGHT + "SubActivities For : ");
 		
 
 		for (int i = 1; i < r.length; i++) {
