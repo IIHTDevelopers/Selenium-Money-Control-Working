@@ -142,11 +142,11 @@ try {
 		System.out.print("\n" + BLUE_BOLD_BRIGHT + "=>");
 		
 
-		System.out.print(YELLOW_BOLD_BRIGHT + "SubActivities For : ");
+		System.out.print(BLUE_BOLD_BRIGHT + "Test For : ");
 		
 
 		for (int i = 1; i < r.length; i++) {
-			System.out.print(YELLOW_BOLD_BRIGHT + r[i] + " ");
+			System.out.print(BLUE_BOLD_BRIGHT + r[i] + " ");
 			
 		}
 		System.out.print(" : ");
