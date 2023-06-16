@@ -1,7 +1,7 @@
 package com.iiht.evaluation.automation;
 
 import java.io.IOException;
-
+import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -16,7 +16,7 @@ public class App{
 		options.addArguments("--remote-allow-origins=*");
 
 		WebDriver driver = new ChromeDriver(options);
-		
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		Activities activities = new Activities();
 		
 		try {
