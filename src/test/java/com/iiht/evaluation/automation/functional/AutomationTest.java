@@ -23,7 +23,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
+import java.util.concurrent.TimeUnit;
 import com.iiht.evaluation.automation.Helpers;
 import com.iiht.evaluation.automation.SubActivities;
 import com.iiht.evaluation.automation.testutils.MasterData;
@@ -40,6 +40,7 @@ public class AutomationTest {
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--remote-allow-origins=*");
 		driver = new ChromeDriver(options);
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		String baseUrl = "https://www.moneycontrol.com/"; 
 		driver.get(baseUrl);
 	}
